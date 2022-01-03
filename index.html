@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home-</title>
+</head>
+
+<body>
+    <!-- header starts -->
+    <header>
+        <nav style="background-color: rgba(41, 41, 41, .93);">
+            <div class="logo" style="color: #fff;">
+                <h1>Pak Dairy Form </h1>
+            </div>
+            <div class="main-nav">
+                <ul class="nav-links">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="about-us.html" target="_blank">
+                        <li>About</li>
+                    </a>
+                    <a href="about.html" target="_blank">
+                        <li>Our History</li>
+                    </a>
+                    <a href="sell.html" target="_blank">
+                        <li>Sell</li>
+                    </a>
+                    <a href="contact.html" target="_blank">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="signUp.html" target="_blank">
+                        <li>SignUp</li>
+                    </a>
+                    <a href="signIn.html" target="_blank">
+                        <li>SignIn</li>
+                    </a>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+        <div class="slider">
+            <!-- <div class="slider-btn">
+                <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
+            </div> -->
+            <div>
+                <img class="mySlides" src="signup-pic3.jpg">
+                <h1 class="caption"></h1>
+                <p class="cap-txt"></p>
+            </div>
+            <div>
+                <img class="mySlides" src="image-2.jpg">
+                <h1 class="caption"></h1>
+            </div>
+            <div>
+                <img class="mySlides" src="image-3.jpg">
+                <h1 class="caption"></h1>
+            </div>
+        </div>
+    </header>
+    <!-- header ends -->
+
+    <!-- Welcome section starts -->
+    <section class="welcome">
+        <h1>Welcome to Hankcok Farm</h1>
+        <p>The FARM Animal Care Program standards are revised every three years to reflect the most current science and
+            <br>
+            best management practices within the dairy industry.
+        </p>
+
+        <div class="welcome-row">
+            <div class="r1">
+                <img src="img.jpg" alt="image 1">
+                <h1>Milking</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos!
+                </p>
+            </div>
+            <div class="r2">
+                <img src="img2.jpg" alt="image 2">
+                <h1>Feeding</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos!
+                </p>
+            </div>
+            <div class="r3">
+                <img src="img3.jpg" alt="image 1">
+                <h1>Our Products</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos!
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!-- Welcome section ends  -->
+
+    <!-- services section starts -->
+    <section class="services-section">
+
+        <h1>What We Offer</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut molestiae quia iusto ex recusandae
+            itaque harum,<br> distinctio, non fugiat ducimus officia molestias repudiandae
+            possimus! Quibusdam?
+        </p>
+
+        <div class="services">
+            <div class="s1">
+                <img src="image-4.jpg">
+                <h2>Butter</h2>
+            </div>
+            <div class="s2">
+                <img src="image-5.jpg">
+                <h2>Milk</h2>
+            </div>
+            <div class="s3">
+                <img src="image-6.jpg">
+                <h2>Cheese</h2>
+            </div>
+            <div class="s4">
+                <img src="image-7.jpg">
+                <h2>Creame</h2>
+            </div>
+        </div>
+
+    </section>
+    <!-- services section ends -->
+    <br><br><br><br><br>
+    <footer>
+        <div class="footer-row">
+            <div class="info">
+                <h2>Agriox</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam eum asperiores, molestias quam autem
+                    doloribus cupiditate ipsum necessitatibus exercitationem commodi?</p>
+                <br>
+                <ul>
+                    <li>alizahir1003@gmail.com</li>
+                    <li>Kahuta District Rwp Punjab</li>
+                    <li>+923495302229</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Sell</li>
+                    <li>SignUp</li>
+                    <li>SignIn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var xx = document.getElementsByClassName("caption");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                xx[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+            xx[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

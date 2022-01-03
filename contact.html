@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact US</title>
+</head>
+
+<body>
+
+    <!-- Header starts -->
+    <header class="about-header">
+        <nav style="background-color: rgba(41, 41, 41, .93);">
+            <div class="logo" style="color: #fff;">
+                <h1>Pak Dairy Form</h1>
+            </div>
+            <div class="main-nav">
+                <ul class="nav-links">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="about.html" target="_blank">
+                        <li>About</li>
+                    </a>
+                    <a href="sell.html" target="_blank">
+                        <li>Sell</li>
+                    </a>
+                    <a href="contact.html" target="_blank">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="signUp.html" target="_blank">
+                        <li>SignUp</li>
+                    </a>
+                    <a href="signIn.html" target="_blank">
+                        <li>SignIn</li>
+                    </a>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Header ends -->
+
+    <!-- Contact Us form -->
+    <section class="contact">
+        <div class="contact-title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-form">
+
+            <div class="contact-row">
+                <div class="label">
+                    <label>Full Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="fullName" placeholder="enter your name">
+                    <span id="Nameerror"></span>
+                </div>
+            </div><br><br>
+
+            <div class="contact-row">
+                <div class="label">
+                    <label>Phone Number</label>
+                </div>
+                <div class="input-field">
+                    <input type="number" id="num" placeholder="enter your phone number">
+                    <span id="Phoneerror"></span>
+                </div>
+            </div><br><br>
+
+            <div class="contact-row">
+                <div class="label">
+                    <label>Message</label>
+                </div>
+                <div class="input-field">
+                    <textarea rows="10"></textarea>
+                </div>
+            </div><br><br>
+
+            <div class="send-btn">
+                <button onclick="onSend()">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-row">
+            <div class="info">
+                <h2>Agriox</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam eum asperiores, molestias quam autem
+                    doloribus cupiditate ipsum necessitatibus exercitationem commodi?</p>
+                <br>
+                <ul>
+                    <li>alizahir1003@gmail.com</li>
+                    <li>Kahuta District Rwp Punjab</li>
+                    <li>+923495302229</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Sell</li>
+                    <li>SignUp</li>
+                    <li>SignIn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function onSend() {
+
+            var getName = document.getElementById("fullName").value;
+            var getPhone = document.getElementById("num").value;
+
+            var getNameErrorId = document.getElementById("Nameerror");
+            var getPhoneerrorId = document.getElementById("Phoneerror");
+
+            if (getName == "") {
+                getNameErrorId.textContent = "Enter Your Full Name";
+                getNameErrorId.style.color = "red";
+            }
+
+            if (getPhone == "") {
+                getPhoneerrorId.textContent = "Enter Your Phone Number";
+                getPhoneerrorId.style.color = "red";
+            } else if (getPhone.length != 11) {
+                getPhoneerrorId.textContent = "Invalid Number";
+                getPhoneerrorId.style.color = "red";
+            }
+
+            for (var i = 0; i < getName.length; i++) {
+
+                var getNameChar = getName.charAt(i);
+
+                if (getNameChar <= 10) {
+                    getNameErrorId.textContent = "Name Contains only alphabets!";
+                    getNameErrorId.style.color = "red";
+                }
+            }
+
+            for (var j = 0; j < getCNIC.length; j++) {
+                var getCNICChar = getCNIC[j];
+                if (getCNICChar == "-") {
+                    getCNICerrorId.textContent = "Enter CNIC without Dashes(" - ")";
+                    getCNICerrorId.style.color = "red";
+                    break;
+                }
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

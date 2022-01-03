@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>About Us(Team Members)</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #000;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo {
+            margin: 24px 0 20px 60px;
+            font-size: 140%;
+            color: #fff;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 30px 60px 20px 0;
+        }
+
+        .nav-links li {
+            margin-right: 35px;
+            font-size: 140%;
+            color: #fff;
+        }
+
+        .nav-links li:hover {
+            color: #155a7e;
+            border-bottom: 2px solid #155a7e;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 10px 30px 0 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #fff;
+            position: relative;
+            top: 20px;
+        }
+
+        footer {
+            background-color: rgba(41, 41, 41, .93);
+        }
+
+        .footer-row {
+            display: flex;
+            margin-left: 100px;
+            padding-top: 50px;
+            color: #fff;
+        }
+
+        .info {
+            width: 40%;
+        }
+
+        .info p {
+            width: 80%;
+            margin-top: 10px;
+        }
+
+        .info ul {
+            list-style: none;
+        }
+
+        .links ul {
+            list-style: none;
+            margin: 10px 0 0 10px;
+        }
+
+        .links ul li {
+            margin-bottom: 15px;
+            font-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="about-nav">
+        <div class="logo">
+            <h1>Pak Dairy Form</h1>
+        </div>
+        <div class="main-nav">
+            <ul class="nav-links">
+                <a href="index.html" target="_blank">
+                    <li>Home</li>
+                </a>
+                <a href="about-us.html" target="_blank">
+                    <li>About</li>
+                </a>
+                <a href="about.html" target="_blank">
+                    <li>Our History</li>
+                </a>
+                <a href="sell.html">
+                    <li>Sell</li>
+                </a>
+                <a href="contact.html" target="_blank">
+                    <li>Contact Us</li>
+                </a>
+                <a href="signUp.html" target="_blank">
+                    <li>SignUp</li>
+                </a>
+                <a href="signIn.html" target="_blank">
+                    <li>SignIn</li>
+                </a>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <table class="table my-5">
+        <h1 class="text-center">Group Members</h1>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Registration No</th>
+                <th scope="col">Picture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Ali Zahir</td>
+                <td>BSSE/F-18-C/3844</td>
+                <td>
+                    <img src="ali.jpeg" width="100">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Umair Khalid</td>
+                <td>BSSE/F-18-C/3895</td>
+                <td>
+                    <img src="umair.jpeg" width="100">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Muhammad Haroon Tabassum</td>
+                <td>BSSE/F-18-C/3860</td>
+                <td>
+                    <img src="haroon.jpeg" width="100">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <footer>
+        <div class="footer-row">
+            <div class="info">
+                <h2>Agriox</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam eum asperiores, molestias quam autem
+                    doloribus cupiditate ipsum necessitatibus exercitationem commodi?</p>
+                <br>
+                <ul>
+                    <li>alizahir1003@gmail.com</li>
+                    <li>Kahuta District Rwp Punjab</li>
+                    <li>+923495302229</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Sell</li>
+                    <li>SignUp</li>
+                    <li>SignIn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

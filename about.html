@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About-</title>
+</head>
+
+<body>
+
+    <!-- Header starts -->
+    <header class="about-header">
+        <nav class="about-nav">
+            <div class="logo">
+                <h1>Pak Dairy Form</h1>
+            </div>
+            <div class="main-nav">
+                <ul class="nav-links">
+                    <a href="index.html" target="_blank">
+                        <li>Home</li>
+                    </a>
+                    <a href="about-us.html" target="_blank">
+                        <li>About</li>
+                    </a>
+                    <a href="about.html" target="_blank">
+                        <li>Our History</li>
+                    </a>
+                    <a href="sell.html">
+                        <li>Sell</li>
+                    </a>
+                    <a href="contact.html" target="_blank">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="signUp.html" target="_blank">
+                        <li>SignUp</li>
+                    </a>
+                    <a href="signIn.html" target="_blank">
+                        <li>SignIn</li>
+                    </a>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-content">
+            <h1>About Us</h1>
+            <p></p>
+        </div>
+
+    </header>
+    <!-- Header ends -->
+
+    <!-- about section starts -->
+    <div class="about-section">
+
+        <div class="about-row">
+
+            <div class="btns">
+                <button id="history" onclick="his()">Our History</button>
+                <br>
+                <button id="mission" onclick="mission()">Our Mission</button>
+                <br>
+                <button id="vision" onclick="vision()">Our Vision</button>
+            </div>
+
+            <div class="paras">
+                <h1>Hylik Farm Began Produce Organic Milk For Dairy Farm</h1>
+                <p>It’s our obligation to take care of our animals, respect our people & improve the health of
+                    the
+                    planet for the future. We keep our animals healthy working in harmony with nature Just like you
+                    don’t want your kids or yourself to be exposed to antibiotics, we don’t want.
+                    <br><br>
+                    We keep our animals healthy by working in harmony with nature Just like you don’t want your kids or
+                    yourself to constantly be exposed to antibiotics, we don’t want our animals to kids or yourself to
+                    constantly be exposed to antibiotics, we don’t want our animals to.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- about section ends  -->
+
+    <!-- team section starts -->
+    <section class="team-section">
+        <p class="title">Team</p>
+        <h1 class="farmer">Our Farmers</h1>
+
+        <div class="team-members">
+
+            <div class="member1">
+                <img src="team1.jpg" alt="team 1">
+                <h1>Ben Stcoks</h1>
+                <p>Tractor Driver</p>
+            </div>
+            <div class="member2">
+                <img src="team2.jpg" alt="team 1">
+                <h1>Adam Crew</h1>
+                <p>Accountant</p>
+            </div>
+            <div class="member3">
+                <img src="team3.jpg" alt="team 1">
+                <h1>Marfi Jon</h1>
+                <p>Marketer</p>
+            </div>
+            <div class="member4">
+                <img src="team4.jpg" alt="team 1">
+                <h1>Moris Jon</h1>
+                <p>Marketer</p>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+    <!-- team section ends -->
+
+    <!-- TESTIMONIALS section starts -->
+    <section class="Testimonals-section">
+
+        <div class="testimonals">
+            <div class="txt">
+                <p>OUR TESTIMONIALS</p>
+                <h1>What They’re Talking About Agriox</h1>
+            </div>
+            <div class="reviews">
+                <div class="review1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet harum ipsum, quae eos culpa
+                        expedita. Eligendi saepe veniam voluptas fugit sed nulla neque dolores, minima tempora quidem
+                        provident illum optio!</p>
+                    <img src="testimonials-v1-img1.jpg" alt="">
+                    <h1>Customer 1</h1>
+                    <br><br><br>
+                </div>
+                <div class="review2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet harum ipsum, quae eos culpa
+                        expedita. Eligendi saepe veniam voluptas fugit sed nulla neque dolores, minima tempora quidem
+                        provident illum optio!</p>
+                    <img src="testimonials-v1-img2.jpg" alt="">
+                    <h1>Customer 2</h1>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+    <!-- TESTIMONIALS section ends -->
+
+    <!-- Footer starts -->
+    <footer>
+        <div class="footer-row">
+            <div class="info">
+                <h2>Agriox</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam eum asperiores, molestias quam autem
+                    doloribus cupiditate ipsum necessitatibus exercitationem commodi?</p>
+                <br>
+                <ul>
+                    <li>alizahir1003@gmail.com</li>
+                    <li>Kahuta District Rwp Punjab</li>
+                    <li>+923495302229</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Sell</li>
+                    <li>SignUp</li>
+                    <li>SignIn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+    <script>
+
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        var getTitle = document.getElementById("title");
+        var getText = document.getElementById("text");
+
+        function his() {
+            getTitle.innerHTML = "Hylik Farm Began Produce Organic Milk For Dairy Farm";
+        }
+        function mission() {
+            getTitle.innerHTML = "Deliver Organic Dairy , From Cow To Everyone.";
+        }
+        function vision() {
+            getTitle.innerHTML = "Know About Our Farm And Vission";
+        }
+    </script>
+
+</body>
+
+</html>

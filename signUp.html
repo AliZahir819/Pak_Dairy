@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp-</title>
+
+</head>
+
+<body style="background: url('bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <div class="signup">
+
+        <div class="signup-image"></div>
+        <div class="signup-form">
+            <form method="post">
+                <h1>SignUp to your account</h1>
+                <input type="text" placeholder="enter your full name" id="fullname">
+                <span id="Nameerror"></span>
+                <input type="number" placeholder="enter your number" id="Phnumber">
+                <span id="Phoneerror"></span>
+                <input type="text" placeholder="enter your cnic number" id="CNICname">
+                <span id="CNICerror" style="color: green;">Enter CNIC without dashes</span>
+                <input type="radio" id="male" name="specific_gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="specific_gender">
+                <label id="female">Female</label>
+                <span id="gendererror"></span>
+                <input type="text" id="address" placeholder="enter your address">
+                <span id="addresserror"></span>
+                <input type="password" id="pass" placeholder="enter password">
+                <span id="passerror"></span>
+                <input type="password" id="Cpass" placeholder="enter confirm password">
+                <span id="Confirmerror"></span>
+                <button type="submit" id="register" onclick="register()">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        function register() {
+
+            var getName = document.getElementById("fullname").value;
+            var getPhone = document.getElementById("Phnumber").value;
+            var getCNIC = document.getElementById("CNICname").value;
+            var getMale = document.getElementById("male").value;
+            var getFemale = document.getElementById("female").value;
+            var getAddress = document.getElementById("address").value;
+            var getPass = document.getElementById("pass").value;
+            var getConfirm = document.getElementById("Cpass").value;
+
+            var getNameErrorId = document.getElementById("Nameerror");
+            var getPhoneerrorId = document.getElementById("Phoneerror");
+            var getCNICerrorId = document.getElementById("CNICerror");
+            var getGendererrorId = document.getElementById("gendererror");
+            var getAddresserrorId = document.getElementById("addresserror");
+            var getPasserrorId = document.getElementById("passerror");
+            var getConfirmPasserrorId = document.getElementById("Confirmerror");
+
+            if (getName == "") {
+                getNameErrorId.textContent = "Enter Your Full Name";
+                getNameErrorId.style.color = "red";
+            }
+
+            if (getPhone == "") {
+                getPhoneerrorId.textContent = "Enter Your Phone Number";
+                getPhoneerrorId.style.color = "red";
+            } else if (getPhone.length != 11) {
+                getPhoneerrorId.textContent = "Invalid Number";
+                getPhoneerrorId.style.color = "red";
+            }
+
+            if (getCNIC == "") {
+                getCNICerrorId.textContent = "Enter Your ID Card Number";
+                getCNICerrorId.style.color = "red";
+            } else if (getCNIC.length != 13) {
+                getCNICerrorId.textContent = "Invalid ID Card Number! Must be 13 Figures";
+                getCNICerrorId.style.color = "red";
+            }
+
+            if (getMale == "" || getFemale == "") {
+                getGendererrorId.textContent = "Select Your Gender";
+                getGendererrorId.style.color = "red";
+            }
+            if (getAddress == "") {
+                getAddresserrorId.textContent = "Enter Your Home Address";
+                getAddresserrorId.style.color = "red";
+            }
+            if (getPass == "") {
+                getPasserrorId.textContent = "Enter Password";
+                getPasserrorId.style.color = "red";
+            }
+            if (getConfirm == "") {
+                getConfirmPasserrorId.textContent = "Enter Password Again";
+                getConfirmPasserrorId.style.color = "red";
+            }
+
+            for (var i = 0; i < getName.length; i++) {
+
+                var getNameChar = getName.charAt(i);
+
+                if (getNameChar <= 10) {
+                    getNameErrorId.textContent = "Name Contains only alphabets!";
+                    getNameErrorId.style.color = "red";
+                }
+            }
+
+            for (var j = 0; j < getCNIC.length; j++) {
+                var getCNICChar = getCNIC[j];
+                if (getCNICChar == "-") {
+                    getCNICerrorId.textContent = "Enter CNIC without Dashes(" - ")";
+                    getCNICerrorId.style.color = "red";
+                    break;
+                }
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

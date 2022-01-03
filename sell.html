@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sell-</title>
+</head>
+
+<body>
+
+    <!-- header starts -->
+    <header>
+        <nav style="background-color: rgba(41, 41, 41, .93);">
+            <div class="logo" style="color: #fff;">
+                <h1>Dangar House</h1>
+            </div>
+            <div class="main-nav">
+                <ul class="nav-links">
+                    <a href="index.html" target="_blank">
+                        <li>Home</li>
+                    </a>
+                    <a href="about-us.html" target="_blank">
+                        <li>About</li>
+                    </a>
+                    <a href="about.html" target="_blank">
+                        <li>Our History</li>
+                    </a>
+                    <a href="sell.html">
+                        <li>Sell</li>
+                    </a>
+                    <a href="contact.html" target="_blank">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="signUp.html" target="_blank">
+                        <li>SignUp</li>
+                    </a>
+                    <a href="signIn.html" target="_blank">
+                        <li>SignIn</li>
+                    </a>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header ends -->
+
+    <!-- sell section -->
+
+    <section class="sell-section">
+        <div class="section-1">
+            <img src="bhens.jpeg">
+            <h1>Rs:96000</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="section-2">
+            <img src="bhens2.jpeg">
+            <h1>Rs:97500</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="section-3">
+            <img src="bhens3.jpeg">
+            <h1>Rs:98500</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="section-4">
+            <img src="bhens4.jpeg">
+            <h1>Rs:99900</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sell-section">
+        <div class="section-1">
+            <img src="bhens5.jpeg">
+            <h1>Rs:100000</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="section-2">
+            <img src="bhens6.jpeg">
+            <h1>Rs:120000</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="section-3">
+            <img src="bhens7.jpeg">
+            <h1>Rs:130000</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="section-4">
+            <img src="bhens.jpeg">
+            <h1>Rs:140000</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sell-section">
+        <div class="section-1">
+            <img src="bhens9.jpeg">
+            <h1>Rs:150000</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="section-2">
+            <img src="bhens10.jpeg">
+            <h1>Rs:250000</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="section-3">
+            <img src="bhens11.jpeg">
+            <h1>Rs:350000</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="section-4">
+            <img src="bhens12.jpeg">
+            <h1>Rs:450000</h1>
+            <p>Dasi Nasal</p>
+            <div class="buy-btn">
+                <button>Buy</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- sell section ends -->
+
+    <footer>
+        <div class="footer-row">
+            <div class="info">
+                <h2>Agriox</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam eum asperiores, molestias quam autem
+                    doloribus cupiditate ipsum necessitatibus exercitationem commodi?</p>
+                <br>
+                <ul>
+                    <li>alizahir1003@gmail.com</li>
+                    <li>Kahuta District Rwp Punjab</li>
+                    <li>+923495302229</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Sell</li>
+                    <li>SignUp</li>
+                    <li>SignIn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
